@@ -1,0 +1,296 @@
+EESchema Schematic File Version 2
+LIBS:VIM_2.1-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32F405
+LIBS:mpu
+LIBS:68 PIN
+LIBS:reugulators
+LIBS:simcard
+LIBS:j502
+LIBS:mcugpio
+LIBS:mc6o
+LIBS:nup5150
+LIBS:lm2596
+LIBS:emmc
+LIBS:TJA1042
+LIBS:ufl
+LIBS:ublox
+LIBS:on semi op amp
+LIBS:VIM_2.1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MPU6050 U2
+U 1 1 5982CCB6
+P 5550 2850
+F 0 "U2" H 5550 3450 60  0000 C CNN
+F 1 "MPU6050" H 5550 2050 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-24_4x4mm_Pitch0.5mm" H 5550 2850 60  0001 C CNN
+F 3 "" H 5550 2850 60  0001 C CNN
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5982CCD4
+P 6400 2150
+F 0 "R1" H 6430 2170 50  0000 L CNN
+F 1 "10k" H 6430 2110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6400 2150 50  0001 C CNN
+F 3 "" H 6400 2150 50  0000 C CNN
+	1    6400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5982CD10
+P 6850 2150
+F 0 "R2" H 6880 2170 50  0000 L CNN
+F 1 "10k" H 6880 2110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0000 C CNN
+	1    6850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2400 6400 2400
+Wire Wire Line
+	6400 2400 6400 2250
+Wire Wire Line
+	6100 2500 6850 2500
+Wire Wire Line
+	6850 2500 6850 2250
+Text HLabel 6400 2400 2    60   Input ~ 0
+i2c_sda
+Text HLabel 6850 2500 2    60   Input ~ 0
+i2c_scl
+$Comp
+L +3.3V #PWR010
+U 1 1 5982CE17
+P 6600 3500
+F 0 "#PWR010" H 6600 3350 50  0001 C CNN
+F 1 "+3.3V" H 6600 3640 50  0000 C CNN
+F 2 "" H 6600 3500 50  0000 C CNN
+F 3 "" H 6600 3500 50  0000 C CNN
+	1    6600 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3500 6100 3500
+$Comp
+L C_Small C8
+U 1 1 5982CE3A
+P 6250 3650
+F 0 "C8" H 6260 3720 50  0000 L CNN
+F 1 "0.1uF" H 6260 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6250 3650 50  0001 C CNN
+F 3 "" H 6250 3650 50  0000 C CNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3550 6250 3500
+Connection ~ 6250 3500
+$Comp
+L GND #PWR011
+U 1 1 5982CEA4
+P 6850 3000
+F 0 "#PWR011" H 6850 2750 50  0001 C CNN
+F 1 "GND" H 6850 2850 50  0000 C CNN
+F 2 "" H 6850 3000 50  0000 C CNN
+F 3 "" H 6850 3000 50  0000 C CNN
+	1    6850 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3000 6850 3000
+$Comp
+L GND #PWR012
+U 1 1 5982CECF
+P 6250 3850
+F 0 "#PWR012" H 6250 3600 50  0001 C CNN
+F 1 "GND" H 6250 3700 50  0000 C CNN
+F 2 "" H 6250 3850 50  0000 C CNN
+F 3 "" H 6250 3850 50  0000 C CNN
+	1    6250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3850 6250 3750
+$Comp
+L C_Small C9
+U 1 1 5982CF8C
+P 6300 2800
+F 0 "C9" H 6310 2870 50  0000 L CNN
+F 1 "2.2nF" H 6310 2720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6300 2800 50  0001 C CNN
+F 3 "" H 6300 2800 50  0000 C CNN
+	1    6300 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 2800 6200 2800
+Wire Wire Line
+	6400 2800 6600 2800
+Wire Wire Line
+	6600 2800 6600 3000
+Connection ~ 6600 3000
+$Comp
+L GND #PWR013
+U 1 1 5982D0B0
+P 4500 2400
+F 0 "#PWR013" H 4500 2150 50  0001 C CNN
+F 1 "GND" H 4500 2250 50  0000 C CNN
+F 2 "" H 4500 2400 50  0000 C CNN
+F 3 "" H 4500 2400 50  0000 C CNN
+	1    4500 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2400 4950 2400
+$Comp
+L +3.3V #PWR014
+U 1 1 5982D109
+P 4100 3100
+F 0 "#PWR014" H 4100 2950 50  0001 C CNN
+F 1 "+3.3V" H 4100 3240 50  0000 C CNN
+F 2 "" H 4100 3100 50  0000 C CNN
+F 3 "" H 4100 3100 50  0000 C CNN
+	1    4100 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5982D12A
+P 4550 2950
+F 0 "C6" H 4560 3020 50  0000 L CNN
+F 1 "10nF" H 4560 2870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4550 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0000 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3100 4950 3100
+Wire Wire Line
+	4550 3050 4550 3100
+Connection ~ 4550 3100
+Wire Wire Line
+	4550 2400 4550 2850
+Connection ~ 4550 2400
+$Comp
+L C_Small C7
+U 1 1 5982D285
+P 4550 3400
+F 0 "C7" H 4560 3470 50  0000 L CNN
+F 1 "10nF" H 4560 3320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4550 3400 50  0001 C CNN
+F 3 "" H 4550 3400 50  0000 C CNN
+	1    4550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3300 4550 3300
+$Comp
+L GND #PWR015
+U 1 1 5982D2D6
+P 4550 3600
+F 0 "#PWR015" H 4550 3350 50  0001 C CNN
+F 1 "GND" H 4550 3450 50  0000 C CNN
+F 2 "" H 4550 3600 50  0000 C CNN
+F 3 "" H 4550 3600 50  0000 C CNN
+	1    4550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3500 4550 3600
+Wire Wire Line
+	4550 3500 4750 3500
+Wire Wire Line
+	4750 3500 4750 3400
+Wire Wire Line
+	4750 3400 4950 3400
+Text HLabel 4900 3600 3    60   Input ~ 0
+int
+Wire Wire Line
+	4900 3600 4900 3500
+Wire Wire Line
+	4900 3500 4950 3500
+Text HLabel 4850 3200 0    60   Input ~ 0
+AD0
+Wire Wire Line
+	4850 3200 4950 3200
+$Comp
+L +3.3V #PWR016
+U 1 1 5982D5BD
+P 6650 1900
+F 0 "#PWR016" H 6650 1750 50  0001 C CNN
+F 1 "+3.3V" H 6650 2040 50  0000 C CNN
+F 2 "" H 6650 1900 50  0000 C CNN
+F 3 "" H 6650 1900 50  0000 C CNN
+	1    6650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2050 6400 2000
+Wire Wire Line
+	6400 2000 6850 2000
+Wire Wire Line
+	6850 2000 6850 2050
+Wire Wire Line
+	6650 2000 6650 1900
+Connection ~ 6650 2000
+NoConn ~ 6100 3400
+NoConn ~ 6100 3300
+NoConn ~ 6100 3200
+NoConn ~ 6100 3100
+NoConn ~ 6100 2900
+NoConn ~ 6100 2700
+NoConn ~ 6100 2600
+NoConn ~ 4950 2500
+NoConn ~ 4950 2600
+NoConn ~ 4950 2700
+NoConn ~ 4950 2800
+NoConn ~ 4950 2900
+NoConn ~ 4950 3000
+$EndSCHEMATC

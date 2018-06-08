@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# lm2596
+#
+DEF lm2596 U 0 40 Y Y 1 F N
+F0 "U" 200 300 60 H V C CNN
+F1 "lm2596" 200 -350 60 H V C CNN
+F2 "" 0 -600 60 H I C CNN
+F3 "" 0 -600 60 H I C CNN
+DRAW
+S 400 250 0 -300 0 1 0 N
+X Vin 1 600 -250 200 L 50 50 1 1 I
+X output 2 600 -150 200 L 50 50 1 1 I
+X ground 3 600 -50 200 L 50 50 1 1 I
+X feedback 4 600 50 200 L 50 50 1 1 I
+X off 5 600 150 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

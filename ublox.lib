@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# ublox_m8u
+#
+DEF ublox_m8u U 0 40 Y Y 1 F N
+F0 "U" 0 850 60 H V C CNN
+F1 "ublox_m8u" 0 -650 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -550 800 550 -600 0 1 0 N
+X safeboot_n 1 -750 700 200 R 50 50 1 1 I
+X d_sel 2 -750 600 200 R 50 50 1 1 I
+X timepulse 3 -750 500 200 R 50 50 1 1 I
+X extint 4 -750 400 200 R 50 50 1 1 I
+X usb_dm 5 -750 300 200 R 50 50 1 1 I
+X usb_dp 6 -750 200 200 R 50 50 1 1 I
+X vdd_usb 7 -750 100 200 R 50 50 1 1 I
+X reset_n 8 -750 -100 200 R 50 50 1 1 I
+X vcc_rf 9 -750 -200 200 R 50 50 1 1 I
+X gnd 10 -750 -300 200 R 50 50 1 1 I
+X txd/spi_miso 20 750 300 200 L 50 50 1 1 I
+X rf_in 11 -750 -400 200 R 50 50 1 1 I
+X rxd/spi_mosi 21 750 400 200 L 50 50 1 1 I
+X gnd 12 -750 -500 200 R 50 50 1 1 I
+X v_bckp 22 750 500 200 L 50 50 1 1 I
+X gnd 13 750 -500 200 L 50 50 1 1 I
+X vcc 23 750 600 200 L 50 50 1 1 I
+X lna_en 14 750 -400 200 L 50 50 1 1 I
+X gnd 24 750 700 200 L 50 50 1 1 I
+X reserved 15 750 -300 200 L 50 50 1 1 I
+X reserved 16 750 -200 200 L 50 50 1 1 I
+X reserved 17 750 -100 200 L 50 50 1 1 I
+X sda/spi_cs_n 18 750 100 200 L 50 50 1 1 I
+X scl/spi_clk 19 750 200 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# ncs20062
+#
+DEF ncs20062 U 0 40 Y Y 1 F N
+F0 "U" 0 -200 60 H V C CNN
+F1 "ncs20062" 0 350 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -250 250 300 -150 0 1 0 N
+X out1 1 -450 200 200 R 50 50 1 1 I
+X in1- 2 -450 100 200 R 50 50 1 1 I
+X in1+ 3 -450 0 200 R 50 50 1 1 I
+X vss 4 -450 -100 200 R 50 50 1 1 I
+X in2+ 5 500 -100 200 L 50 50 1 1 I
+X in2- 6 500 0 200 L 50 50 1 1 I
+X out2 7 500 100 200 L 50 50 1 1 I
+X vdd 8 500 200 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
