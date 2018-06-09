@@ -32,6 +32,7 @@ LIBS:valves
 LIBS:stm32F405
 LIBS:mpu
 LIBS:68 PIN
+LIBS:reugulators
 LIBS:simcard
 LIBS:j502
 LIBS:mcugpio
