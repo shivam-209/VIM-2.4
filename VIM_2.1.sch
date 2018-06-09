@@ -32,7 +32,6 @@ LIBS:valves
 LIBS:stm32F405
 LIBS:mpu
 LIBS:68 PIN
-LIBS:reugulators
 LIBS:simcard
 LIBS:j502
 LIBS:mcugpio
@@ -514,4 +513,6 @@ Text Notes 3580 5890 0    315  ~ 0
 sushil changes
 Text Notes 3550 6300 0    315  ~ 0
 shivam changes\n
+Text Notes 3650 7250 0    315  ~ 0
+BANter\n\n
 $EndSCHEMATC
