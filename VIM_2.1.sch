@@ -32,7 +32,6 @@ LIBS:valves
 LIBS:stm32F405
 LIBS:mpu
 LIBS:68 PIN
-LIBS:reugulators
 LIBS:simcard
 LIBS:j502
 LIBS:mcugpio
@@ -349,7 +348,7 @@ F 3 "" H 8400 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1750 3900 0    118  ~ 0
-ublox m8u
+VIM
 $Comp
 L +12V #PWR09
 U 1 1 5AFD7009
@@ -510,4 +509,6 @@ Wire Wire Line
 Wire Wire Line
 	5110 3900 5110 3690
 Connection ~ 5110 3690
+Text Notes 3580 5890 0    315  ~ 0
+sushil changes
 $EndSCHEMATC
