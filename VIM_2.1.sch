@@ -32,7 +32,6 @@ LIBS:valves
 LIBS:stm32F405
 LIBS:mpu
 LIBS:68 PIN
-LIBS:reugulators
 LIBS:simcard
 LIBS:j502
 LIBS:mcugpio
@@ -510,4 +509,6 @@ Wire Wire Line
 Wire Wire Line
 	5110 3900 5110 3690
 Connection ~ 5110 3690
+Text Notes 3580 5890 0    315  ~ 0
+sushil changes
 $EndSCHEMATC
