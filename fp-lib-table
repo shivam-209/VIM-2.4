@@ -11,4 +11,6 @@
   (lib (name RBL0812)(type KiCad)(uri "$(KIPRJMOD)/RBL0812.pretty")(options "")(descr ""))
   (lib (name ufl)(type KiCad)(uri "$(KIPRJMOD)/ufl.pretty")(options "")(descr ""))
   (lib (name ublox)(type KiCad)(uri "$(KIPRJMOD)/ublox.pretty")(options "")(descr ""))
+  (lib (name "chip antenna")(type KiCad)(uri "$(KIPRJMOD)/chip antenna")(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri "$(KIPRJMOD)/logo")(options "")(descr ""))
 )

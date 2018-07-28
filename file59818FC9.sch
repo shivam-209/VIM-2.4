@@ -32,7 +32,6 @@ LIBS:valves
 LIBS:stm32F405
 LIBS:mpu
 LIBS:68 PIN
-LIBS:reugulators
 LIBS:simcard
 LIBS:j502
 LIBS:mcugpio
@@ -917,7 +916,7 @@ F 3 "" H 1800 8800 50  0001 C CNN
 	1    1800 8800
 	0    -1   -1   0   
 $EndComp
-Text Notes 950  8350 0    118  ~ 24
+Text Notes 850  8275 0    118  ~ 24
 Buzzer switch
 Text Label 1700 8800 2    60   ~ 0
 buzzer_control
@@ -954,17 +953,6 @@ F 2 "Resistors_SMD:R_0603_HandSoldering" H 13600 8900 50  0001 C CNN
 F 3 "" H 13600 8900 50  0000 C CNN
 	1    13600 8900
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X05 P6
-U 1 1 5AFA22DF
-P 14100 8050
-F 0 "P6" H 14100 8350 50  0000 C CNN
-F 1 "CONN_01X05" V 14200 8050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 14100 8050 50  0001 C CNN
-F 3 "" H 14100 8050 50  0000 C CNN
-	1    14100 8050
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2000 2400 2000 2450
@@ -1441,10 +1429,6 @@ Wire Wire Line
 	14200 8350 14650 8350
 Wire Wire Line
 	14650 8350 14650 8450
-Wire Wire Line
-	14300 8250 14950 8250
-Wire Wire Line
-	14950 8250 14950 8450
 Text Label 13550 8750 2    60   ~ 0
 in1
 Text Label 13900 8750 2    60   ~ 0
@@ -1507,19 +1491,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 3050 3650 3050
 $Comp
-L USB_A-RESCUE-VIM_2.1 P5
-U 1 1 5AFC833F
-P 5050 8500
-AR Path="/5AFC833F" Ref="P5"  Part="1" 
-AR Path="/59818FCA/5AFC833F" Ref="P5"  Part="1" 
-F 0 "P5" H 5250 8300 50  0000 C CNN
-F 1 "charging" V 4720 8450 50  0000 C CNN
-F 2 "Connectors:USB_A" V 5000 8400 50  0001 C CNN
-F 3 "" V 5000 8400 50  0000 C CNN
-	1    5050 8500
-	0    1    1    0   
-$EndComp
-$Comp
 L GND #PWR089
 U 1 1 5AFC8FBA
 P 4450 9050
@@ -1559,7 +1530,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 8600 4450 8500
 Wire Wire Line
-	4450 8500 4650 8500
+	4450 8500 5050 8500
 Wire Wire Line
 	4450 9000 4450 9050
 Text Label 3770 8800 2    60   ~ 0
@@ -1576,7 +1547,7 @@ F 3 "" H 5250 8900 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5250 8900 5250 8800
+	5250 8550 5250 8900
 Wire Wire Line
 	2750 10300 2800 10300
 $Comp
@@ -1618,23 +1589,12 @@ Wire Wire Line
 	11400 8850 11400 8950
 Connection ~ 11400 8900
 Wire Wire Line
-	11400 8250 11400 8300
+	11400 8025 11400 8300
 Wire Wire Line
-	11350 8600 11400 8600
+	11350 8600 11675 8600
 Connection ~ 11400 8600
 Text Label 11350 8600 2    60   ~ 0
 speed_input
-$Comp
-L CONN_01X01 P10
-U 1 1 5AFD6DA1
-P 11400 8050
-F 0 "P10" H 11400 8150 50  0000 C CNN
-F 1 "speed input" V 11500 8050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11400 8050 50  0001 C CNN
-F 3 "" H 11400 8050 50  0000 C CNN
-	1    11400 8050
-	0    -1   -1   0   
-$EndComp
 $Comp
 L CONN_01X02 P9
 U 1 1 5AFDFEE3
@@ -2108,16 +2068,94 @@ $EndComp
 $Comp
 L +12V #PWR0101
 U 1 1 5B100CAB
-P 2250 8350
-F 0 "#PWR0101" H 2250 8200 50  0001 C CNN
-F 1 "+12V" H 2250 8490 50  0000 C CNN
-F 2 "" H 2250 8350 50  0001 C CNN
-F 3 "" H 2250 8350 50  0001 C CNN
-	1    2250 8350
+P 2250 8275
+F 0 "#PWR0101" H 2250 8125 50  0001 C CNN
+F 1 "+12V" H 2250 8415 50  0000 C CNN
+F 2 "" H 2250 8275 50  0001 C CNN
+F 3 "" H 2250 8275 50  0001 C CNN
+	1    2250 8275
 	1    0    0    -1  
 $EndComp
 Text Label 4030 4250 2    60   ~ 0
 charging
 Wire Wire Line
 	4030 4250 4200 4250
+$Comp
+L C C41
+U 1 1 5B5C1FE7
+P 11675 8775
+F 0 "C41" H 11475 8975 50  0000 L CNN
+F 1 "100nf" H 11475 8875 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 11713 8625 50  0001 C CNN
+F 3 "" H 11675 8775 50  0001 C CNN
+	1    11675 8775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11675 8600 11675 8625
+Wire Wire Line
+	11675 8925 11400 8925
+Wire Wire Line
+	11400 8925 11400 8900
+$Comp
+L D D1
+U 1 1 5B5C2FB8
+P 2100 8450
+F 0 "D1" H 2100 8550 50  0000 C CNN
+F 1 "D" H 2100 8350 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 2100 8450 50  0001 C CNN
+F 3 "" H 2100 8450 50  0001 C CNN
+	1    2100 8450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 8300 2100 8275
+Wire Wire Line
+	2100 8275 2250 8275
+Wire Wire Line
+	2250 8275 2250 8350
+Wire Wire Line
+	2100 8600 2250 8600
+$Comp
+L CONN_01X02 P2
+U 1 1 5B5C4831
+P 5100 8275
+F 0 "P2" H 5100 8425 50  0000 C CNN
+F 1 "charging" V 5200 8275 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5100 8275 50  0001 C CNN
+F 3 "" H 5100 8275 50  0000 C CNN
+	1    5100 8275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 8500 5050 8475
+Wire Wire Line
+	5150 8475 5150 8550
+Wire Wire Line
+	5150 8550 5250 8550
+$Comp
+L Conn_01x06 J4
+U 1 1 5B5CE367
+P 14100 8050
+F 0 "J4" H 14100 8350 50  0000 C CNN
+F 1 "Conn_01x06" H 14100 7650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 14100 8050 50  0001 C CNN
+F 3 "" H 14100 8050 50  0001 C CNN
+	1    14100 8050
+	0    -1   -1   0   
+$EndComp
+Text Label 11400 8025 0    60   ~ 0
+hall
+Text Label 14725 8150 0    60   ~ 0
+hall
+Wire Wire Line
+	14300 8250 14300 8300
+Wire Wire Line
+	14300 8300 14950 8300
+Wire Wire Line
+	14950 8300 14950 8450
+Wire Wire Line
+	14725 8150 14725 8250
+Wire Wire Line
+	14725 8250 14400 8250
 $EndSCHEMATC

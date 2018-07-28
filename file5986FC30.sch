@@ -32,7 +32,6 @@ LIBS:valves
 LIBS:stm32F405
 LIBS:mpu
 LIBS:68 PIN
-LIBS:reugulators
 LIBS:simcard
 LIBS:j502
 LIBS:mcugpio
@@ -172,7 +171,7 @@ U 1 1 598ABB9C
 P 1300 1100
 F 0 "C12" H 1310 1170 50  0000 L CNN
 F 1 "100uF" H 1310 1020 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 1300 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.7" H 1300 1100 50  0001 C CNN
 F 3 "" H 1300 1100 50  0000 C CNN
 	1    1300 1100
 	1    0    0    -1  
@@ -183,7 +182,7 @@ U 1 1 598ABE0E
 P 3300 1100
 F 0 "C23" H 3310 1170 50  0000 L CNN
 F 1 "470uF" H 3310 1020 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 3300 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 3300 1100 50  0001 C CNN
 F 3 "" H 3300 1100 50  0000 C CNN
 	1    3300 1100
 	1    0    0    -1  
@@ -264,7 +263,7 @@ U 1 1 598AD8BD
 P 6000 1100
 F 0 "C28" H 6010 1170 50  0000 L CNN
 F 1 "4.7uF" H 6010 1020 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 6000 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 6000 1100 50  0001 C CNN
 F 3 "" H 6000 1100 50  0000 C CNN
 	1    6000 1100
 	1    0    0    -1  
@@ -916,17 +915,6 @@ F 3 "" H 7900 5900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ufl U16
-U 1 1 5ACB7744
-P 2850 6450
-F 0 "U16" H 2650 6450 60  0000 C CNN
-F 1 "ufl" H 2850 6450 60  0000 C CNN
-F 2 "ufl:ufl_shield" H 2850 6450 60  0001 C CNN
-F 3 "" H 2850 6450 60  0001 C CNN
-	1    2850 6450
-	1    0    0    -1  
-$EndComp
-$Comp
 L ufl U15
 U 1 1 5ACB855E
 P 1850 4500
@@ -1293,14 +1281,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 4850 1650 4800
 Wire Wire Line
-	2350 6450 2250 6450
-Wire Wire Line
-	2250 6450 2250 6550
-Wire Wire Line
-	3050 6350 3550 6350
-Wire Wire Line
-	3550 6350 3550 6450
-Wire Wire Line
 	7500 5800 7300 5800
 Wire Wire Line
 	7300 5800 7300 6150
@@ -1310,10 +1290,6 @@ Wire Wire Line
 	7400 6000 8100 6000
 Wire Wire Line
 	8100 6000 8100 5800
-Wire Wire Line
-	2350 6450 2350 6350
-Wire Wire Line
-	2350 6350 2450 6350
 Wire Wire Line
 	1450 4400 1450 4800
 Wire Wire Line
@@ -1368,7 +1344,7 @@ U 1 1 5B1E2F2F
 P 3100 1100
 F 0 "C33" H 3110 1170 50  0000 L CNN
 F 1 "100uF" V 3150 800 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Reflow" H 3100 1100 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Reflow" H 3100 1100 50  0001 C CNN
 F 3 "" H 3100 1100 50  0000 C CNN
 	1    3100 1100
 	1    0    0    -1  
@@ -1424,4 +1400,15 @@ F 3 "" H 3900 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3900 2100
+$Comp
+L Antenna AE1
+U 1 1 5B5CCC1C
+P 2050 6550
+F 0 "AE1" H 1975 6625 50  0000 R CNN
+F 1 "Antenna" H 1975 6550 50  0000 R CNN
+F 2 "chip antenna:chip antenaa" H 2050 6550 50  0001 C CNN
+F 3 "" H 2050 6550 50  0001 C CNN
+	1    2050 6550
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
