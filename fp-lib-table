@@ -1,5 +1,4 @@
 (fp_lib_table
-  (lib (name ANTENNASMD)(type KiCad)(uri "C:/Users/Shivan/Downloads/VIM_arm (12)/VIM_arm/ANTENNASMD.pretty")(options "")(descr ""))
   (lib (name npu5051)(type KiCad)(uri "C:/Users/Shivan/Downloads/VIM_arm (12)/VIM_arm/npu5051.pretty")(options "")(descr ""))
   (lib (name emmc1)(type KiCad)(uri "$(KIPRJMOD)/emmc1.pretty")(options "")(descr ""))
   (lib (name coilcell20mm)(type KiCad)(uri "$(KIPRJMOD)/coilcell20mm.pretty")(options "")(descr ""))
@@ -13,4 +12,5 @@
   (lib (name ublox)(type KiCad)(uri "$(KIPRJMOD)/ublox.pretty")(options "")(descr ""))
   (lib (name "chip antenna")(type KiCad)(uri "$(KIPRJMOD)/chip antenna")(options "")(descr ""))
   (lib (name logo)(type KiCad)(uri "$(KIPRJMOD)/logo")(options "")(descr ""))
+  (lib (name ANTENNASMD)(type KiCad)(uri "$(KIPRJMOD)/ANTENNASMD.pretty")(options "")(descr ""))
 )
